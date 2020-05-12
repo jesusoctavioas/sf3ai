@@ -8,6 +8,7 @@ os.environ['OMP_NUM_THREADS'] = '1'
 import argparse
 import torch
 from src.model import ActorCritic, IntrinsicCuriosityModule
+from src.optimizer import modelo_ryu
 from src.optimizer import GlobalAdam
 from src.process import local_train
 import torch.multiprocessing as _mp
